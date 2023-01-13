@@ -1,0 +1,38 @@
+server:
+  port: 8082
+spring:
+  mail:
+    #邮件服务器地址
+    host: smtp.163.com
+    #协议
+    protocol: smtp
+    #编码
+    default-encoding: UTF-8
+    #授权码
+    password: GKDHLXGTPDRVABVZ
+    #发送者邮箱地址
+    username: 18223169159@163.com
+    #端口号
+    port: 25
+
+  rabbitmq:
+    username: guest
+    password: guest
+    host: 127.0.0.1
+    port: 5672
+    listener:
+      simple:
+        acknowledge-mode: manual
+
+  redis:
+    host: 39.108.174.183
+    timeout: 10000ms
+    password: 13895619077
+    port: 6379
+    database: 0
+    lettuce:
+      pool:
+        max-active: 1024
+        max-wait: 10000ms
+        max-idle: 200
+        min-idle: 5
