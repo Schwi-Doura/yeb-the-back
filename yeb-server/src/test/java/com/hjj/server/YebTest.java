@@ -22,6 +22,7 @@ public class YebTest {
         Integer rid = 4;
         menuRoleMapper.delete(new QueryWrapper<MenuRole>().eq("rid", rid));
         //11,8,7
+        //test
         Integer[] mids = {11, 8};
         try {
             if (mids == null || mids.length == 0) {
